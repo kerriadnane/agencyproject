@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>agency01</display-name>
+  <servlet>
+    <servlet-name>acc</servlet-name>
+    <servlet-class>servlets.HomeS</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>client</servlet-name>
+    <servlet-class>servlets.ClientS</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>reservation</servlet-name>
+    <servlet-class>servlets.Reservation</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>passager</servlet-name>
+    <servlet-class>servlets.PassagerS</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>acc</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>client</servlet-name>
+    <url-pattern>/listclient</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>client</servlet-name>
+    <url-pattern>/clientdetail</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>client</servlet-name>
+    <url-pattern>/clientupdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>reservation</servlet-name>
+    <url-pattern>/listreservation</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>reservation</servlet-name>
+    <url-pattern>/reservationdetail</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>passager</servlet-name>
+    <url-pattern>/passagerdetail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>passager</servlet-name>
+    <url-pattern>/passagerupdate</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet-mapping>
+    <servlet-name>passager</servlet-name>
+    <url-pattern>/listpassager</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

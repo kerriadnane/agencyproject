@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database connection settings -->
+        
+        
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+<!--         <property name="connection.url">jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3420128</property> -->
+<!--         <property name="connection.username">sql3420128</property> -->
+<!--         <property name="connection.password">qTEL8cXUDl</property> -->
+		
+		
+		<property name="connection.url">jdbc:mysql://localhost:3306/agency</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+        
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.enable_lazy_load_no_trans">true</property>
+        
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+         
+        <!-- Use XML-based mapping metadata -->	
+        <!-- <mapping resource="domain/Message.hbm.xml"/> -->
+        
+        <!-- Use Annotation-based mapping metadata -->
+        <mapping class="Entities.Users"/>
+        <mapping class="Entities.Passager"/>
+        <mapping class="Entities.Client"/>
+        <mapping class="Entities.Company"/>
+        <mapping class="Entities.Aereport"/>
+        <mapping class="Entities.Vol"/>
+        <mapping class="Entities.Reservation"/>
+        
+    </session-factory>
+</hibernate-configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
